@@ -3,7 +3,7 @@
 
 def calculate_platforms_needed(mass_robots: list[int], limit: int):
     """Метод определения минимального количества платформ."""
-    sorted_mass_robots = sorted(mass_robots)
+    sorted_mass_robots: list[int] = sorted(mass_robots)
     index_left: int = 0
     index_right: int = len(mass_robots) - 1
     result: int = 0
